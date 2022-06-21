@@ -12,11 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.0.1",
-    "colors": "^1.4.0",
     "csv-parse": "^5.2.0",
     "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "handlebars": "^4.7.7",
     "moment": "^2.29.3",
     "morgan": "^1.10.0",
     "validator": "^13.7.0"
