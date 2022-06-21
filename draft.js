@@ -2,9 +2,11 @@ import moment from 'moment'
 import chalk from 'chalk'
 import validator from 'validator'
 import dotenv from 'dotenv'
+import morgan from 'morgan'
 
 moment().format()
 dotenv.config()
+app.use(morgan('dev'))
 
 const URL = process.env.URL
 
