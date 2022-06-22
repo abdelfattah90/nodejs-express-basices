@@ -1,7 +1,9 @@
+<%- include('../partials/head') %> <%- include('../partials/navbar') %>
+
 <h1>In the name of of Allah the Merciful</h1>
 
 <h3>Hi, <%= user.name %></h3>
-
+<img src="img/sean-oulashin-unsplash.jpg" width="400" height="400" />
 <% if (user.admin) { %>
 <p>Let me tell you a secret: <b>I am an admin</b></p>
-<% } %>
+<% } %> <%- include('../partials/footer') %>
