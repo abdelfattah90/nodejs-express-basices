@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "chalk": "^5.0.1",
     "csv-parse": "^5.2.0",
     "dotenv": "^16.0.1",
