@@ -20,3 +20,11 @@ console.log(bcrypt.compareSync(userPassword, hashPassword))
 console.log(chalk.magenta(moment().format('LLLL')))
 console.log(validator.isMobilePhone('01066078954', 'ar-EG'))
 console.log(chalk.blueBright.bold('In the name of of Allah the Merciful'))
+
+//
+app.use('/', (req, res) => {
+  console.log(req.headers)
+  res.statusCode = 200
+  res.setHeader('Content-Type', 'text/html')
+  res.end('<h1>In the name of Allah the Merciful</h1>')
+})
