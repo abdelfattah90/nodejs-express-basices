@@ -11,9 +11,9 @@ const app = express()
 const port = 5000
 
 // VIEWS
-const dirname = path.dirname(fileURLToPath(import.meta.url))
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 app.set('view engine', 'ejs')
-app.set('views', path.join(dirname, './app/views'))
+app.set('views', path.join(__dirname, './app/views'))
 app.use(express.static('./app/public'))
 
 // ROUETS
