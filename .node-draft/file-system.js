@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs' // SYNC
 import { readFile, writeFile } from 'fs' // ASYNC
 
-// // SYNC
+// SYNC
 console.log('1 - Start!')
 const txtFile = readFileSync('./files/file/text.txt', 'utf-8')
 console.log('2 - Before..', txtFile)
