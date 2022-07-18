@@ -1,4 +1,5 @@
 import express from 'express'
+import dotenv from 'dotenv'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
@@ -8,7 +9,9 @@ import postsRouter from './app/routes/posts.js'
 import postIdRouter from './app/routes/post-id.js'
 
 const app = express()
-const port = 5000
+dotenv.config()
+const port_5 = 5000
+const PORT = process.env.PORT
 
 // VIEWS
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -20,4 +23,4 @@ app.use(express.static('./app/public'))
 app.use(express.json())
 app.use([router, postsRouter, postIdRouter])
 
-app.listen(port, () => console.log('App Running...'))
+app.listen(PORT || port_5, () => console.log('App Running...'))
