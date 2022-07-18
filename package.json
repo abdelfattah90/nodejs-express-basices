@@ -4,6 +4,12 @@
   "description": "",
   "main": "app.js",
   "type": "module",
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [
+    "heroku"
+  ],
   "scripts": {
     "start": "node app",
     "dev": "nodemon app"
