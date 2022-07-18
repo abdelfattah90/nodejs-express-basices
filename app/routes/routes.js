@@ -1,6 +1,6 @@
 import express from 'express'
-import user from '../models/user.js'
-import posts from '../models/posts.js'
+import user from '../models/User.js'
+import posts from '../models/Posts.js'
 
 const router = express.Router()
 
