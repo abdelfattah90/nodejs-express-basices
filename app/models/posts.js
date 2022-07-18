@@ -31,6 +31,14 @@ const posts = [
     date: 'June 20, 2022',
     color: 'bg-warning',
   },
+  {
+    title: 'How to use EJS',
+    url: 'https://blog.logrocket.com/how-to-use-ejs-template-node-js-application/',
+    description:
+      'If you are writing a backend application in Node.js and you want to send HTML back to the clients interacting with it, then you must find a way to “mix in,” or interpolate, the processed data into the HTML files you are sending.',
+    date: 'December 24, 2021',
+    color: 'bg-primary',
+  },
 ]
 
 export default posts
